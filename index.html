@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Better Converter — File Conversion Tools</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ── HERO ── -->
+  <header class="hero">
+    <nav class="navbar">
+      <div class="nav-logo">
+        <span class="logo-mark">⬡</span>
+        <span class="logo-name">BetterConverter</span>
+      </div>
+      <div class="nav-links">
+        <a href="#tools">Tools</a>
+        <a href="#how">How it works</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Free · Fast · Private</p>
+      <h1 class="hero-title">Convert any file,<br/><span class="hero-accent">instantly.</span></h1>
+      <p class="hero-sub">8 powerful conversion tools — all in your browser. No uploads to servers. No sign-ups. Your files never leave your device.</p>
+      <a href="#tools" class="hero-cta">Explore Tools ↓</a>
+    </div>
+
+    <div class="hero-grid-bg"></div>
+  </header>
+
+  <!-- ── TOOLS GRID ── -->
+  <section class="tools-section" id="tools">
+    <div class="section-label">— 8 Tools Available</div>
+    <h2 class="section-title">Pick your conversion</h2>
+
+    <div class="tools-grid">
+
+      <!-- 1. PDF to Word -->
+      <div class="tool-card" data-tool="pdf-to-word">
+        <div class="tool-icon" style="--c:#6c63ff">📄</div>
+        <div class="tool-info">
+          <h3>PDF to Word</h3>
+          <p>Extract text from PDF and download as a .txt / Word-ready file</p>
+        </div>
+        <button class="tool-btn" onclick="openTool('pdf-to-word')">Open Tool →</button>
+      </div>
+
+      <!-- 2. Word to PDF -->
+      <div class="tool-card" data-tool="word-to-pdf">
+        <div class="tool-icon" style="--c:#22d3a0">📝</div>
+        <div class="tool-info">
+          <h3>Word / Text to PDF</h3>
+          <p>Convert your .txt or typed text into a clean PDF document</p>
+        </div>
+        <button class="tool-btn" onclick="openTool('word-to-pdf')">Open Tool →</button>
+      </div>
+
+      <!-- 3. Image to PDF -->
+      <div class="tool-card" data-tool="image-to-pdf">
+        <div class="tool-icon" style="--c:#f0647a">🖼️</div>
+        <div class="tool-info">
+          <h3>Image to PDF</h3>
+          <p>Combine one or multiple images into a single PDF file</p>
+        </div>
+        <button class="tool-btn" onclick="openTool('image-to-pdf')">Open Tool →</button>
+      </div>
+
+      <!-- 4. PDF to Image -->
+      <div class="tool-card" data-tool="pdf-to-image">
+        <div class="tool-icon" style="--c:#fbbf24">🔍</div>
+        <div class="tool-info">
+          <h3>PDF to Image</h3>
+          <p>Render PDF pages as high-quality PNG images</p>
+        </div>
+        <button class="tool-btn" onclick="openTool('pdf-to-image')">Open Tool →</button>
+      </div>
+
+      <!-- 5. Excel to PDF -->
+      <div class="tool-card" data-tool="excel-to-pdf">
+        <div class="tool-icon" style="--c:#34d399">📊</div>
+        <div class="tool-info">
+          <h3>Excel / CSV to PDF</h3>
+          <p>Turn spreadsheet data into a formatted PDF table</p>
+        </div>
+        <button class="tool-btn" onclick="openTool('excel-to-pdf')">Open Tool →</button>
+      </div>
+
+      <!-- 6. Merge PDFs -->
+      <div class="tool-card" data-tool="merge-pdf">
+        <div class="tool-icon" style="--c:#a78bfa">🔗</div>
+        <div class="tool-info">
+          <h3>Merge PDFs</h3>
+          <p>Combine multiple PDF files into one merged document</p>
+        </div>
+        <button class="tool-btn" onclick="openTool('merge-pdf')">Open Tool →</button>
+      </div>
+
+      <!-- 7. Compress PDF -->
+      <div class="tool-card" data-tool="compress-pdf">
+        <div class="tool-icon" style="--c:#f97316">🗜️</div>
+        <div class="tool-info">
+          <h3>Compress PDF</h3>
+          <p>Reduce PDF file size by removing metadata and optimizing</p>
+        </div>
+        <button class="tool-btn" onclick="openTool('compress-pdf')">Open Tool →</button>
+      </div>
+
+      <!-- 8. Text to PDF -->
+      <div class="tool-card" data-tool="text-to-pdf">
+        <div class="tool-icon" style="--c:#38bdf8">✏️</div>
+        <div class="tool-info">
+          <h3>Text to PDF</h3>
+          <p>Type or paste text and instantly download it as a PDF</p>
+        </div>
+        <button class="tool-btn" onclick="openTool('text-to-pdf')">Open Tool →</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── HOW IT WORKS ── -->
+  <section class="how-section" id="how">
+    <div class="section-label">— Simple Process</div>
+    <h2 class="section-title">How it works</h2>
+    <div class="steps-row">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h4>Pick a tool</h4>
+        <p>Choose from 8 conversion tools above</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h4>Upload your file</h4>
+        <p>Drag & drop or click to select your file</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h4>Convert & Download</h4>
+        <p>Click convert and download your file instantly</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TOOL PANELS ── -->
+
+  <!-- PDF to Word -->
+  <div class="tool-panel" id="panel-pdf-to-word">
+    <div class="panel-inner">
+      <div class="panel-header">
+        <div>
+          <p class="panel-eyebrow">📄 PDF to Word</p>
+          <h3>Extract text from PDF</h3>
+        </div>
+        <button class="panel-close" onclick="closeTool('pdf-to-word')">✕</button>
+      </div>
+      <div class="dropzone" id="dz-pdf-to-word" onclick="document.getElementById('file-pdf-to-word').click()">
+        <input type="file" id="file-pdf-to-word" accept=".pdf" hidden onchange="handleFile('pdf-to-word', this)"/>
+        <div class="dz-icon">📄</div>
+        <p class="dz-text">Drop your PDF here or <span class="dz-link">browse</span></p>
+        <p class="dz-sub">Supports .pdf files</p>
+      </div>
+      <div class="file-info" id="info-pdf-to-word"></div>
+      <div class="panel-preview" id="preview-pdf-to-word"></div>
+      <button class="convert-btn" id="btn-pdf-to-word" onclick="convert('pdf-to-word')" disabled>Extract & Download Text</button>
+      <div class="progress-wrap" id="prog-pdf-to-word"><div class="progress-bar"></div></div>
+    </div>
+  </div>
+
+  <!-- Word to PDF -->
+  <div class="tool-panel" id="panel-word-to-pdf">
+    <div class="panel-inner">
+      <div class="panel-header">
+        <div>
+          <p class="panel-eyebrow">📝 Word / Text to PDF</p>
+          <h3>Convert text file to PDF</h3>
+        </div>
+        <button class="panel-close" onclick="closeTool('word-to-pdf')">✕</button>
+      </div>
+      <div class="dropzone" id="dz-word-to-pdf" onclick="document.getElementById('file-word-to-pdf').click()">
+        <input type="file" id="file-word-to-pdf" accept=".txt,.text" hidden onchange="handleFile('word-to-pdf', this)"/>
+        <div class="dz-icon">📝</div>
+        <p class="dz-text">Drop your .txt file here or <span class="dz-link">browse</span></p>
+        <p class="dz-sub">Supports .txt files</p>
+      </div>
+      <div class="file-info" id="info-word-to-pdf"></div>
+      <div class="panel-preview" id="preview-word-to-pdf"></div>
+      <button class="convert-btn" id="btn-word-to-pdf" onclick="convert('word-to-pdf')" disabled>Convert to PDF</button>
+      <div class="progress-wrap" id="prog-word-to-pdf"><div class="progress-bar"></div></div>
+    </div>
+  </div>
+
+  <!-- Image to PDF -->
+  <div class="tool-panel" id="panel-image-to-pdf">
+    <div class="panel-inner">
+      <div class="panel-header">
+        <div>
+          <p class="panel-eyebrow">🖼️ Image to PDF</p>
+          <h3>Convert images to PDF</h3>
+        </div>
+        <button class="panel-close" onclick="closeTool('image-to-pdf')">✕</button>
+      </div>
+      <div class="dropzone" id="dz-image-to-pdf" onclick="document.getElementById('file-image-to-pdf').click()">
+        <input type="file" id="file-image-to-pdf" accept="image/*" multiple hidden onchange="handleFile('image-to-pdf', this)"/>
+        <div class="dz-icon">🖼️</div>
+        <p class="dz-text">Drop images here or <span class="dz-link">browse</span></p>
+        <p class="dz-sub">Supports JPG, PNG, WEBP — multiple files allowed</p>
+      </div>
+      <div class="file-info" id="info-image-to-pdf"></div>
+      <div class="image-preview-grid" id="preview-image-to-pdf"></div>
+      <button class="convert-btn" id="btn-image-to-pdf" onclick="convert('image-to-pdf')" disabled>Convert to PDF</button>
+      <div class="progress-wrap" id="prog-image-to-pdf"><div class="progress-bar"></div></div>
+    </div>
+  </div>
+
+  <!-- PDF to Image -->
+  <div class="tool-panel" id="panel-pdf-to-image">
+    <div class="panel-inner">
+      <div class="panel-header">
+        <div>
+          <p class="panel-eyebrow">🔍 PDF to Image</p>
+          <h3>Render PDF pages as PNG</h3>
+        </div>
+        <button class="panel-close" onclick="closeTool('pdf-to-image')">✕</button>
+      </div>
+      <div class="dropzone" id="dz-pdf-to-image" onclick="document.getElementById('file-pdf-to-image').click()">
+        <input type="file" id="file-pdf-to-image" accept=".pdf" hidden onchange="handleFile('pdf-to-image', this)"/>
+        <div class="dz-icon">🔍</div>
+        <p class="dz-text">Drop your PDF here or <span class="dz-link">browse</span></p>
+        <p class="dz-sub">Each page will be saved as a PNG</p>
+      </div>
+      <div class="file-info" id="info-pdf-to-image"></div>
+      <div class="panel-preview" id="preview-pdf-to-image"></div>
+      <button class="convert-btn" id="btn-pdf-to-image" onclick="convert('pdf-to-image')" disabled>Convert Pages to PNG</button>
+      <div class="progress-wrap" id="prog-pdf-to-image"><div class="progress-bar"></div></div>
+    </div>
+  </div>
+
+  <!-- Excel / CSV to PDF -->
+  <div class="tool-panel" id="panel-excel-to-pdf">
+    <div class="panel-inner">
+      <div class="panel-header">
+        <div>
+          <p class="panel-eyebrow">📊 Excel / CSV to PDF</p>
+          <h3>Convert spreadsheet to PDF table</h3>
+        </div>
+        <button class="panel-close" onclick="closeTool('excel-to-pdf')">✕</button>
+      </div>
+      <div class="dropzone" id="dz-excel-to-pdf" onclick="document.getElementById('file-excel-to-pdf').click()">
+        <input type="file" id="file-excel-to-pdf" accept=".csv,.xlsx,.xls" hidden onchange="handleFile('excel-to-pdf', this)"/>
+        <div class="dz-icon">📊</div>
+        <p class="dz-text">Drop your CSV or Excel file here or <span class="dz-link">browse</span></p>
+        <p class="dz-sub">Supports .csv, .xlsx, .xls</p>
+      </div>
+      <div class="file-info" id="info-excel-to-pdf"></div>
+      <div class="panel-preview" id="preview-excel-to-pdf" style="overflow-x:auto"></div>
+      <button class="convert-btn" id="btn-excel-to-pdf" onclick="convert('excel-to-pdf')" disabled>Convert to PDF</button>
+      <div class="progress-wrap" id="prog-excel-to-pdf"><div class="progress-bar"></div></div>
+    </div>
+  </div>
+
+  <!-- Merge PDFs -->
+  <div class="tool-panel" id="panel-merge-pdf">
+    <div class="panel-inner">
+      <div class="panel-header">
+        <div>
+          <p class="panel-eyebrow">🔗 Merge PDFs</p>
+          <h3>Combine multiple PDFs into one</h3>
+        </div>
+        <button class="panel-close" onclick="closeTool('merge-pdf')">✕</button>
+      </div>
+      <div class="dropzone" id="dz-merge-pdf" onclick="document.getElementById('file-merge-pdf').click()">
+        <input type="file" id="file-merge-pdf" accept=".pdf" multiple hidden onchange="handleFile('merge-pdf', this)"/>
+        <div class="dz-icon">🔗</div>
+        <p class="dz-text">Drop 2+ PDF files here or <span class="dz-link">browse</span></p>
+        <p class="dz-sub">Select multiple PDFs to merge</p>
+      </div>
+      <div class="file-info" id="info-merge-pdf"></div>
+      <div class="panel-preview" id="preview-merge-pdf"></div>
+      <button class="convert-btn" id="btn-merge-pdf" onclick="convert('merge-pdf')" disabled>Merge & Download PDF</button>
+      <div class="progress-wrap" id="prog-merge-pdf"><div class="progress-bar"></div></div>
+    </div>
+  </div>
+
+  <!-- Compress PDF -->
+  <div class="tool-panel" id="panel-compress-pdf">
+    <div class="panel-inner">
+      <div class="panel-header">
+        <div>
+          <p class="panel-eyebrow">🗜️ Compress PDF</p>
+          <h3>Reduce PDF file size</h3>
+        </div>
+        <button class="panel-close" onclick="closeTool('compress-pdf')">✕</button>
+      </div>
+      <div class="dropzone" id="dz-compress-pdf" onclick="document.getElementById('file-compress-pdf').click()">
+        <input type="file" id="file-compress-pdf" accept=".pdf" hidden onchange="handleFile('compress-pdf', this)"/>
+        <div class="dz-icon">🗜️</div>
+        <p class="dz-text">Drop your PDF here or <span class="dz-link">browse</span></p>
+        <p class="dz-sub">Removes metadata & optimizes structure</p>
+      </div>
+      <div class="file-info" id="info-compress-pdf"></div>
+      <div class="panel-preview" id="preview-compress-pdf"></div>
+      <button class="convert-btn" id="btn-compress-pdf" onclick="convert('compress-pdf')" disabled>Compress & Download</button>
+      <div class="progress-wrap" id="prog-compress-pdf"><div class="progress-bar"></div></div>
+    </div>
+  </div>
+
+  <!-- Text to PDF -->
+  <div class="tool-panel" id="panel-text-to-pdf">
+    <div class="panel-inner">
+      <div class="panel-header">
+        <div>
+          <p class="panel-eyebrow">✏️ Text to PDF</p>
+          <h3>Type text, get a PDF</h3>
+        </div>
+        <button class="panel-close" onclick="closeTool('text-to-pdf')">✕</button>
+      </div>
+      <div class="text-input-wrap">
+        <input type="text" id="text-pdf-title" placeholder="Document title (optional)" class="text-title-input"/>
+        <textarea id="text-pdf-content" placeholder="Type or paste your text here…" rows="10"></textarea>
+        <div class="text-options">
+          <label>Font size:
+            <select id="text-pdf-size">
+              <option value="10">10pt</option>
+              <option value="12" selected>12pt</option>
+              <option value="14">14pt</option>
+              <option value="16">16pt</option>
+            </select>
+          </label>
+          <label>Alignment:
+            <select id="text-pdf-align">
+              <option value="left">Left</option>
+              <option value="center">Center</option>
+              <option value="right">Right</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <button class="convert-btn" id="btn-text-to-pdf" onclick="convert('text-to-pdf')">Generate PDF</button>
+      <div class="progress-wrap" id="prog-text-to-pdf"><div class="progress-bar"></div></div>
+    </div>
+  </div>
+
+  <!-- ── OVERLAY ── -->
+  <div class="overlay" id="overlay" onclick="closeAllTools()"></div>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <span class="logo-mark">⬡</span>
+      <span class="logo-name">BetterConverter</span>
+    </div>
+    <p class="footer-note">All conversions happen in your browser. Your files are never uploaded to any server.</p>
+    <p class="footer-copy">© 2025 BetterConverter · Built with HTML, CSS & JavaScript</p>
+  </footer>
+
+  <!-- ── TOAST ── -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
